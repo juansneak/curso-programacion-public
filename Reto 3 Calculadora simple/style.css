@@ -1,0 +1,55 @@
+#calculator {
+    width: 320px; /* Ajusta este valor según sea necesario */
+    margin: auto;
+}
+
+#display {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 40px;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Crea cuatro columnas de igual ancho */
+    grid-auto-rows: 60px; /* Define la altura de las filas de la cuadrícula */
+    gap: 10px; /* Espacio entre botones */
+}
+
+#buttons button {
+    font-size: 18px;
+    cursor: pointer;
+    background: #e3fffa; /* Fondo claro para los botones, puedes cambiarlo como prefieras */
+    border: 1px solid #ccc; /* Borde sutil para los botones */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Botones que ocupan dos filas */
+#buttons .double-row {
+    grid-row: span 2; /* Asegúrate de que esto no esté siendo sobrescrito por otro estilo */
+    background: rgb(128, 197, 252)}
+
+
+/* Botón '0' que ocupa el ancho de dos columnas */
+#buttons .double-column {
+    grid-column: span 2;
+}
+
+#display, button {
+    font-family: 'Orbitron', sans-serif; /* Aplica la fuente Orbitron */
+   
+
+}
+
+#buttons .operacion {
+    
+    background: rgb(128, 197, 252)}
+}
+
+.vt323-regular {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
